@@ -1,0 +1,46 @@
+
+[2020-10-23 14:11:55.850] 
+[2020-10-23 14:11:55.850] 
+[2020-10-23 14:11:55.850] fj8810fm@VPC-Y11P1460296 //G01-VDIY11VNR2A/UserData-Y/GECP010146/fj8810fm/Desktop/FJcloud-O
+[2020-10-23 14:11:55.850] $ 
+[2020-10-23 14:11:56.035] 
+[2020-10-23 14:11:56.035] fj8810fm@VPC-Y11P1460296 //G01-VDIY11VNR2A/UserData-Y/GECP010146/fj8810fm/Desktop/FJcloud-O
+[2020-10-23 14:11:56.035] $ 
+[2020-10-23 14:11:56.200] 
+[2020-10-23 14:11:56.200] fj8810fm@VPC-Y11P1460296 //G01-VDIY11VNR2A/UserData-Y/GECP010146/fj8810fm/Desktop/FJcloud-O
+[2020-10-23 14:11:56.200] $ 
+[2020-10-23 14:12:11.333] 
+[2020-10-23 14:12:11.333] fj8810fm@VPC-Y11P1460296 //G01-VDIY11VNR2A/UserData-Y/GECP010146/fj8810fm/Desktop/FJcloud-O
+[2020-10-23 14:12:11.333] $ curl -Ss https://compute.jp-east-3.cloud.global.fujitsu.com/v2.1/d3293e6171734e6c8019ded280e89473/servers -X POST -k -H\
+[2020-10-23 14:12:15.966] >  "X-Auth-Token: gAAAAABfkjPehVM9vqZo_vbWEB45YhInq2lICbs2_ffoDsnQEDhVdOJkowOhNPgAcgvb-ShBgjXkrjEfbM7RtwPWdydWx9VnZPn93nik8HjDhhSwMKKHDtd97WAhHe4V-sCapryqz9qd-BoM8vaFe1Xk1jXabkH15Mt-DkQigdVrXuuIgaqGsHvNk_SN4LN3m2FFR9rS7tY-" -H "Content-TType: application/json"\
+[2020-10-23 14:12:15.966] >  -d '{ "server": { "name": "'SDCSOT001'", "flavorRef": "'e1b37120-10dc-4ace-b9b2-7f30cea5fb64'",
+[2020-10-23 14:12:15.971] >  "block_device_mapping_v2":[
+[2020-10-23 14:12:15.980] >  { "boot_index": "0", "uuid":"'53f01353-a3f0-40c6-8ad1-26fd1a2a1dee'", "volume_size": "'40'", "device_name": "'/dev/vda'", "source_type": "'snapshot'", "destination_type": "'volume'", "delete_on_termination": "'false'" },
+[2020-10-23 14:12:16.119] >  { "boot_index": "1", "uuid":"'506ca838-b9d9-4451-b83f-fdfc0cc487ac'", "source_type": "'volume'", "destination_type": "'volume'", "delete_on_termination": "'false'" },
+[2020-10-23 14:12:16.138] >  { "boot_index": "2", "uuid":"'0777235b-bfb9-4a3e-9fa7-6ffe13eb50c9'", "source_type": "'volume'", "destination_type": "'volume'", "delete_on_termination": "'false'" } ],
+[2020-10-23 14:12:16.138] >  "key_name": "'LinuxKey'", "networks": [ { "uuid": "'85983fd0-f924-433a-8dcd-7a6c422e83df'", "fixed_ip": "'10.18.16.62'" }, { "uuid": "'c51c0964-7ac2-4f5b-83fd-318f84f81754'", "fixed_ip": "'10.16.17.62'" } ], "security_groups": [ { "naame": "'default'" } ], "metadata": { "fcx.autofailover": "'true'" } }, "os:scheduler_hints": { "fcx.dedicated": "'true'" } }' | jq .
+[2020-10-23 14:12:52.494] {
+[2020-10-23 14:12:52.494]   "server": {
+[2020-10-23 14:12:52.494]     "security_groups": [
+[2020-10-23 14:12:52.494]       {
+[2020-10-23 14:12:52.494]         "name": "default"
+[2020-10-23 14:12:52.494]       }
+[2020-10-23 14:12:52.494]     ],
+[2020-10-23 14:12:52.501]     "OS-DCF:diskConfig": "MANUAL",
+[2020-10-23 14:12:52.501]     "id": "5feaae7e-be8c-40fa-97b6-601ad32914f1",
+[2020-10-23 14:12:52.501]     "links": [
+[2020-10-23 14:12:52.501]       {
+[2020-10-23 14:12:52.501]         "href": "https://compute.jp-east-3.cloud.global.fujitsu.com/v2.1/d3293e6171734e6c8019ded280e89473/servers/5feaae7e-be8c-40fa-97b6-601ad32914f1",
+[2020-10-23 14:12:52.501]         "rel": "self"
+[2020-10-23 14:12:52.501]       },
+[2020-10-23 14:12:52.501]       {
+[2020-10-23 14:12:52.501]         "href": "https://compute.jp-east-3.cloud.global.fujitsu.com/d3293e6171734e6c8019ded280e89473/servers/5feaae7e-be8c-40fa-97b6-601ad32914f1",
+[2020-10-23 14:12:52.501]         "rel": "bookmark"
+[2020-10-23 14:12:52.501]       }
+[2020-10-23 14:12:52.501]     ],
+[2020-10-23 14:12:52.501]     "adminPass": "gnSNe4fhcjR3"
+[2020-10-23 14:12:52.501]   }
+[2020-10-23 14:12:52.501] }
+[2020-10-23 14:12:52.509] 
+[2020-10-23 14:12:52.509] fj8810fm@VPC-Y11P1460296 //G01-VDIY11VNR2A/UserData-Y/GECP010146/fj8810fm/Desktop/FJcloud-O
+[2020-10-23 14:12:52.509] $ 
